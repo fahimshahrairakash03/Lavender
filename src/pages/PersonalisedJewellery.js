@@ -1,6 +1,7 @@
 import React from "react";
 import custom1 from "../assets/Custom Jewellary/custom1.jpg";
 import custom2 from "../assets/Custom Jewellary/custom2.jpg";
+import "./PersonalisedJewellery.css";
 
 const PersonalisedJewellery = () => {
   return (
@@ -14,8 +15,12 @@ const PersonalisedJewellery = () => {
       </h1>
 
       <div className="grid gap-10 lg:grid-cols-2 px-10">
-        <div style={{ height: "600px" }}>
+        <div className="necklaceSection" style={{ height: "600px" }}>
           <img style={{ height: "100%", width: "100%" }} src={custom1} alt="" />
+          <div className="customJewellaryTag">
+            <h1 className="font-semibold">NECKLACES</h1>
+            <h1 className="font-semibold underline">SHOP NOW</h1>
+          </div>
         </div>
         <div style={{ height: "600px" }}>
           <img style={{ height: "100%", width: "100%" }} src={custom2} alt="" />

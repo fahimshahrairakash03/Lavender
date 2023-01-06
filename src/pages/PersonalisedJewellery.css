@@ -1,0 +1,10 @@
+.necklaceSection {
+  position: relative;
+}
+.customJewellaryTag {
+  background-color: white;
+  opacity: 0.5;
+
+  position: absolute;
+  bottom: 0;
+}
