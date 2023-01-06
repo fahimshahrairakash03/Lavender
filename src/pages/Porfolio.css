@@ -1,0 +1,9 @@
+.portfolio-img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  background: linear-gradient(
+    191deg,
+    rgba(3, 1, 1, 0.5998774509803921) 3%,
+    rgba(63, 61, 75, 0.9808298319327731) 76%
+  );
+}

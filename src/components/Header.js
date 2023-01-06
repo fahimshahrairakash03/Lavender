@@ -15,7 +15,7 @@ const Header = () => {
   );
 
   return (
-    <div className="static">
+    <div style={{ "z-index": "1" }} className="fixed w-full">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">

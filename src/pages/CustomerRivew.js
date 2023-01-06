@@ -37,7 +37,7 @@ const CustomerRivew = () => {
   ];
 
   return (
-    <div className="lg:ml-10">
+    <div className="lg:ml-10 my-28">
       <div className="lg:flex lg:justify-around p-10">
         <div className="lg:w-1/4 md:w-full">
           <h1 className="text-center font-semibold text-5xl pt-20">

@@ -1,0 +1,10 @@
+hr {
+  border-width: 1px;
+  border-color: black;
+  background-color: black;
+}
+.btn-contact {
+  color: white;
+  background-color: black;
+  padding: 10px 40px;
+}
