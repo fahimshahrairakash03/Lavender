@@ -1,0 +1,17 @@
+.banner {
+  position: relative;
+}
+
+.bannerbtn {
+  position: absolute;
+  padding: 10px 30px;
+  background-color: #f7e1da;
+  bottom: 0;
+}
+.bannerbtn1 {
+  position: absolute;
+  padding: 10px 30px;
+  background-color: #f7e1da;
+  margin-left: 190px;
+  bottom: 0;
+}
