@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/Logo.png";
+import SearchModal from "./SearchModal";
+import { FaUserAlt } from "react-icons/fa";
 
 const Header = () => {
   const menuItem = (
@@ -63,6 +65,11 @@ const Header = () => {
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
               />
             </svg>
+          </button>
+          <button className="btn btn-ghost btn-circle">
+            <Link>
+              <FaUserAlt></FaUserAlt>
+            </Link>
           </button>
           <button className="btn btn-ghost btn-circle">
             <div className="indicator">
