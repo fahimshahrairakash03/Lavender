@@ -6,7 +6,7 @@ import "./PersonalisedJewellery.css";
 const PersonalisedJewellery = () => {
   return (
     <div>
-      <h1 className="text-center p-10  text-lg">
+      <h1 className="text-center p-10  text-lg sm:text-justify">
         <span className="font-bold">Personalized jewellery</span> and
         personalized gifts are the specialty of{" "}
         <span className="font-bold">Lavender</span>. We offer a wide range of
@@ -22,8 +22,12 @@ const PersonalisedJewellery = () => {
             <h1 className="font-semibold underline">SHOP NOW</h1>
           </div>
         </div>
-        <div style={{ height: "600px" }}>
+        <div className="braceletsSection" style={{ height: "600px" }}>
           <img style={{ height: "100%", width: "100%" }} src={custom2} alt="" />
+          <div className="customJewellaryTag">
+            <h1 className="font-semibold">BRACELETS</h1>
+            <h1 className="font-semibold underline">SHOP NOW</h1>
+          </div>
         </div>
       </div>
     </div>

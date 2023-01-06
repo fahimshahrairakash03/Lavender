@@ -1,10 +1,15 @@
 .necklaceSection {
   position: relative;
 }
+.braceletsSection {
+  position: relative;
+}
 .customJewellaryTag {
   background-color: white;
   opacity: 0.5;
-
   position: absolute;
   bottom: 0;
+  padding: 20px 100px;
+  margin-left: 25%;
+  margin-bottom: 50px;
 }
