@@ -3,8 +3,13 @@ import { Link } from "react-router-dom";
 import logo from "../assets/Logo.png";
 import SearchModal from "./SearchModal";
 import { FaUserAlt } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
+  const handleClick = (lang) => {
+    i18n.changeLanguage(lang);
+  };
   const menuItem = (
     <>
       <Link to="/">
@@ -65,6 +70,19 @@ const Header = () => {
           </Link>
         </div>
         <div className="navbar-end">
+          <button
+            onClick={() => handleClick("en")}
+            className="btn btn-xs btn-ghost"
+          >
+            English
+          </button>
+          <button
+            onClick={() => handleClick("bn")}
+            className="btn btn-xs btn-ghost"
+          >
+            Bangla
+          </button>
+
           <SearchModal></SearchModal>
           <button className="btn btn-ghost btn-circle">
             <Link to="/login">
