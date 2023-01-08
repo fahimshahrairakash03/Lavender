@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -8,30 +8,16 @@ import ring2 from "../assets/best seller/ring2.jpg";
 import ring3 from "../assets/best seller/ring3.jpg";
 import ring4 from "../assets/best seller/ring4.jpg";
 import PrimaryBtn from "../components/PrimaryBtn";
+import { Link } from "react-router-dom";
 
 const PremiumJewellary = () => {
-  const products = [
-    {
-      name: "18k Yellow Gold Bold Medium Hoops Ring",
-      price: "Tk 49,500.00",
-      photo: ring1,
-    },
-    {
-      name: "18k Yellow Gold Bold Medium Hoops Earrings",
-      price: "Tk 49,500.00",
-      photo: ring2,
-    },
-    {
-      name: "18k Yellow Gold Bold Medium Hoops Earrings",
-      price: "Tk 49,500.00",
-      photo: ring3,
-    },
-    {
-      name: "18k Yellow Gold Bold Medium Hoops Earrings",
-      price: "Tk 49,500.00",
-      photo: ring4,
-    },
-  ];
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch("Product.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
   return (
     <div className="px-10">
       <h1 className="text-3xl pb-10 font-medium">
@@ -51,28 +37,33 @@ const PremiumJewellary = () => {
       >
         {products.map((product, i) => (
           <SwiperSlide key={i}>
-            <div
-              style={{ width: "300px" }}
-              className="card w-96 bg-base-100 shadow-xl"
-            >
-              <figure>
-                <img
-                  style={{ height: "250px", width: "100%" }}
-                  src={product.photo}
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">{product.name}</h2>
-                <p>Price: {product.price}</p>
+            <Link to="/productdetails">
+              <div
+                style={{ width: "300px" }}
+                className="card w-96 bg-base-100 shadow-xl"
+              >
+                <figure>
+                  <img
+                    style={{ height: "250px", width: "100%" }}
+                    src={product.img}
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">{product.name}</h2>
+                  <p>Price: {product.price}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
 
       <div className="my-5">
-        <PrimaryBtn>SHOP ALL</PrimaryBtn>
+        <Link to="/allproducts">
+          {" "}
+          <PrimaryBtn>VIEW ALL</PrimaryBtn>
+        </Link>
       </div>
     </div>
   );

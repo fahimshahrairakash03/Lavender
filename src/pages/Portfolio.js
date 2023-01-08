@@ -25,8 +25,10 @@ const Portfolio = () => {
     <div className="mt-20 p-3">
       <h1 className="text-5xl mb-10 text-center">#Lavender</h1>
       <div className="grid gap-3 lg:grid-cols-4">
-        {images.map((image) => (
+        {images.map((image, i) => (
           <img
+            key={i}
+            alt=""
             className="portfolio-img"
             style={{ height: "350px", width: "400px" }}
             src={image.img}

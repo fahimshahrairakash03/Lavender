@@ -21,9 +21,17 @@ const Contact = () => {
         <button className="btn-contact">SUBSCRIBE</button>
       </div>
       <div className="flex justify-center align-center mb-5 ">
-        <FaFacebookF className="mr-3"></FaFacebookF>
-        <FaTwitter className="mr-3"></FaTwitter>
-        <FaInstagram className="mr-3"></FaInstagram>
+        <a target="blank" href="https://www.facebook.com/">
+          <FaFacebookF className="mr-3"></FaFacebookF>
+        </a>
+        <a target="blank" href="https://twitter.com/?lang=en">
+          {" "}
+          <FaTwitter className="mr-3"></FaTwitter>
+        </a>
+        <a target="blank" href="https://www.instagram.com/">
+          {" "}
+          <FaInstagram className="mr-3"></FaInstagram>
+        </a>
       </div>
       <hr />
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import banner from "../assets/banner.jpg";
 import PrimaryBtn from "../components/PrimaryBtn";
 import "./Banner.css";
@@ -16,7 +17,9 @@ const Banner = () => {
         </p>
 
         <div className="pb-5 flex justify-center align-center">
-          <PrimaryBtn>SHOP NOW</PrimaryBtn>
+          <Link to="/allproducts">
+            <PrimaryBtn>SHOP NOW</PrimaryBtn>
+          </Link>
         </div>
       </div>
       <div
@@ -27,8 +30,12 @@ const Banner = () => {
           backgroundSize: "cover",
         }}
       >
-        <button className="bannerbtn1 m-5 font-semibold">NEW ARRIVALS</button>
-        <button className="bannerbtn m-5 font-semibold">BEST SELLERS</button>
+        <Link to="/allproducts">
+          <button className="bannerbtn1 m-5 font-semibold">NEW ARRIVALS</button>
+        </Link>
+        <Link to="/allproducts">
+          <button className="bannerbtn m-5 font-semibold">BEST SELLERS</button>
+        </Link>
       </div>
     </div>
   );

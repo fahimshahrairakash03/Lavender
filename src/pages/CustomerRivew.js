@@ -71,8 +71,8 @@ const CustomerRivew = () => {
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
           >
-            {reviews.map((review) => (
-              <div className="ms-20">
+            {reviews.map((review, i) => (
+              <div key={i} className="ms-20">
                 <SwiperSlide>
                   <div className="card w-96 bg-base-100 shadow-xl">
                     <div className="card-body">

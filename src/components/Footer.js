@@ -7,12 +7,13 @@ const Footer = () => {
       <footer className="footer p-10 bg-neutral text-neutral-content">
         <div>
           <span className="footer-title">Lavender</span>
+
           <a href="" className="link link-hover">
-            OSKAR HILL is a lifestyle retailer dedicated to <br />
+            LAVENDER is a lifestyle retailer dedicated to <br />
             inspiring customers through a unique combination <br />
             of product, creativity and cultural understanding. <br />
             Celebrating the precious moments of life with <br />
-            meaningful Jewellery is Oskar Hill true calling.
+            meaningful Jewellery is LAVENDER true calling.
           </a>
         </div>
         <div>

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "18k Yellow Gold Bold Medium Hoops Ring",
+    "price": "Tk 49,500.00",
+    "img": "https://cdn.shopify.com/s/files/1/0551/3039/0696/files/Untitled_design_75-compressed.jpg?v=1656976694"
+  },
+  {
+    "id": 2,
+    "name": "18k Yellow Gold Bold Medium Hoops Earrings",
+    "price": "Tk 49,500.00",
+    "img": "https://cdn.shopify.com/s/files/1/0551/3039/0696/products/Zaza_18K_Gold_Ring_6_540x.png?v=1656948242"
+  },
+  {
+    "id": 3,
+    "name": "18k Yellow Gold Bold Medium Hoops Earrings",
+    "price": "Tk 49,500.00",
+    "img": "https://cdn.shopify.com/s/files/1/0551/3039/0696/products/R-MCSCB-Y_540x.png?v=1663520542"
+  },
+  {
+    "id": 4,
+    "name": "18k Yellow Gold Bold Medium Hoops Earrings",
+    "price": "Tk 49,500.00",
+    "img": "https://cdn.shopify.com/s/files/1/0551/3039/0696/products/Courage-Beetle-Ring-925-sterling-silver---18K-gold-plating-1660122169_540x.jpg?v=1660122171"
+  },
+  {
+    "id": 5,
+    "name": "Muze gold earrings",
+    "price": "Tk 8,800.00",
+    "img": "https://cdn.shopify.com/s/files/1/0551/3039/0696/products/Muze_gold_earrings_0_540x.png?v=1657377194"
+  },
+  {
+    "id": 6,
+    "name": "Zaza Sterling Silver Necklace",
+    "price": "Tk 9,300.00",
+    "img": "https://cdn.shopify.com/s/files/1/0551/3039/0696/products/Zaza_Sterling_Silver_Necklace_2_1800x1800.png?v=1658682160"
+  },
+  {
+    "id": 7,
+    "name": "Moonstone Ring - Poise",
+    "price": "Tk 7,800.00",
+    "img": "https://cdn.shopify.com/s/files/1/0551/3039/0696/products/Moonstone_Ring_Poise_4_1800x1800.png?v=1656962118"
+  },
+  {
+    "id": 8,
+    "name": "Buzz 18K Gold Ring",
+    "price": "Tk 6,500.00",
+    "img": "https://cdn.shopify.com/s/files/1/0551/3039/0696/products/Buzz-18K-Gold-Ring-925-sterling-silver---18K-gold-plating-1660120765_1800x1800.jpg?v=1660120767"
+  }
+]
