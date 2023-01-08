@@ -70,18 +70,20 @@ const Header = () => {
           </Link>
         </div>
         <div className="navbar-end">
-          <button
-            onClick={() => handleClick("en")}
-            className="btn btn-xs btn-ghost"
-          >
-            English
-          </button>
-          <button
-            onClick={() => handleClick("bn")}
-            className="btn btn-xs btn-ghost"
-          >
-            Bangla
-          </button>
+          <div>
+            <button
+              onClick={() => handleClick("en")}
+              className="btn btn-xs btn-ghost "
+            >
+              Eng
+            </button>
+            <button
+              onClick={() => handleClick("bn")}
+              className="btn btn-xs btn-ghost  "
+            >
+              Ban
+            </button>
+          </div>
 
           <SearchModal></SearchModal>
           <button className="btn btn-ghost btn-circle">
